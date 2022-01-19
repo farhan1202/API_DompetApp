@@ -14,11 +14,11 @@
     $kategori_id = $_POST['kategori_id']; 
     $status_id = $_POST['status_id'];
 
-    if ( empty($deskripsi) || empty($tanggal) ||empty($nilai) ||  empty($dompet_id) ||empty($kategori_id) ||empty($status_id)     ) :
+    if (  empty($tanggal) ||empty($nilai) ||  empty($dompet_id) ||empty($kategori_id) ||empty($status_id)     ) :
 
         echo json_encode([
             'status' => "400",
-            'message' => 'Please fill all the fields',
+            'message' => 'Please fill the fields',
         ]);
         exit; 
     endif;
