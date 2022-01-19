@@ -6,7 +6,7 @@
 
     }
 
-    $query = "SELECT * FROM dompet";
+    $query = "SELECT * FROM dompet ORDER BY nama";
     $hasil = mysqli_query($con,$query);
     if(mysqli_num_rows($hasil)>0){ 
         $response1= array();

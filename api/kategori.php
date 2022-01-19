@@ -8,11 +8,11 @@
     $deskripsi = $_POST['deskripsi'];
     $status_id = $_POST['status_id'];
 
-    if (empty($nama)  || empty($deskripsi) || empty($status_id)) :
+    if (empty($nama)  ||   empty($status_id)) :
 
         echo json_encode([
             'status' => "400",
-            'message' => 'Please fill all the fields',
+            'message' => 'Please fill nama and status fields',
         ]);
         exit; 
     endif;

@@ -6,7 +6,7 @@
 
     }
 
-    $query = "SELECT * FROM kategori";
+    $query = "SELECT * FROM kategori ORDER BY nama";
     $hasil = mysqli_query($con,$query);
     if(mysqli_num_rows($hasil)>0){ 
         $response1= array();
